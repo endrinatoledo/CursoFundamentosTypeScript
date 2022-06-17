@@ -20,7 +20,13 @@
     stock : 12
   })
   addProduct({
-    title: 'product',
+    title: 'product2',
+    createAtt: new Date(1993,1,1) ,
+    stock : 12,
+    size : 'L'
+  })
+  addProduct({
+    title: 'product3',
     createAtt: new Date(1993,1,1) ,
     stock : 12,
     size : 'L'
