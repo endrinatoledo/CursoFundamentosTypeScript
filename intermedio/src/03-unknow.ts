@@ -27,6 +27,9 @@ unknowVar = {}
 if(typeof unknowVar === 'string'){
   unknowVar.toUpperCase()
 }
+if(typeof unknowVar === 'boolean'){
+  let isNew2: boolean = unknowVar
+}
 
 const parse = (str: string) : unknown => {
   return JSON.parse(str)
