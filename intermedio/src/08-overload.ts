@@ -14,4 +14,8 @@ if (Array.isArray(rtaArray)){
 
 console.log('rtaArray',rtaArray)
 const rtaArray2 = parseStr(['E','n','d','r','i','n','a'])
+if(typeof rtaArray2 === 'string'){
+  rtaArray2.toLowerCase()
+}
+
 console.log('rtaArray2',rtaArray2)
