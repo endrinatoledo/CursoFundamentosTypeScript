@@ -12,5 +12,7 @@ export interface UpdateProduct extends Partial<CreateProductDto>{ }
 
 type example2 = Required<Product>
 
-export interface FindProduct extends Readonly<Partial<Product>> { }
+export interface FindProduct extends Readonly<Partial<Omit<Product, 'tags'>>> {
+  readonly tags: ReadonlyArray<string> // no permite mutar ni reasignar el array
+ }
 type example3 = Readonly<Product>
